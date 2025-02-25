@@ -1,0 +1,20 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+    </head>
+<body>
+    <header>
+        <h1>Page about</h1>
+    </header>
+    <main>
+         <h1>Je suis la page listing</h1> 
+            <ul>
+                {% for listing in listings %}
+                   <li>{{ listing.name }}</li>
+                {% endfor %}
+            </ul>
+    </main>
+</body>
+</html>

@@ -5,6 +5,14 @@
     <title>Coucou</title>
   </head>
   <body>
+     <nav>
+      <a href="{% url 'band-list' %}">Groupes</a>
+      <a href="{% url 'listing' %}">Listings</a>
+      <a href="{% url 'contact' %}">Contact</a>
+     </nav>
+
     {% block content %}{% endblock %}
   </body>
 </html>
+
+

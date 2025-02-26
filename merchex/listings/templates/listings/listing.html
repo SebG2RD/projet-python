@@ -1,5 +1,6 @@
 {% extends "listings/base.html" %} {% block content %}
 <h1>Je suis la page listing</h1>
+<a href="{% url 'listing-create' %}">Créer un groupe</a>
 <ul>
   {% for listing in listings %}
   <li><a href="{% url 'listing-detail' listing.id %}">{{ listing.name }}</a></li>

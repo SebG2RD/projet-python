@@ -9,5 +9,12 @@ class ContactUsForm(forms.Form):
 class BandForm(forms.ModelForm):
     class Meta:
         model = Band
+        # fields = '__all__'
+        exclude = ('active', 'official_website' )
+        
+class ListingForm(forms.ModelForm):
+    class Meta:
+        model = Listing
         fields = '__all__'
+
     
